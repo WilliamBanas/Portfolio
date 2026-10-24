@@ -3,6 +3,11 @@ export type SocialLink = {
   href: string
 }
 
+export type ProfileStat = {
+  label: string
+  value: string
+}
+
 export const profile = {
   name: 'Alex Martin',
   role: 'Développeur Full-Stack',
@@ -28,6 +33,11 @@ export const profile = {
     'Git',
     'Accessibilité',
   ],
+  stats: [
+    { label: "Années d'expérience", value: '7+' },
+    { label: 'Localisation', value: 'Paris, France' },
+    { label: 'Disponibilité', value: 'Ouvert aux missions' },
+  ],
 } satisfies {
   name: string
   role: string
@@ -37,4 +47,5 @@ export const profile = {
   location: string
   socials: SocialLink[]
   skills: string[]
+  stats: ProfileStat[]
 }

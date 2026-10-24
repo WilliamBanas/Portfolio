@@ -18,7 +18,7 @@ export default function Experience() {
           <li key={experience.id} className="relative">
             <span
               aria-hidden="true"
-              className="absolute -left-[1.94rem] top-2 h-3.5 w-3.5 rounded-full border-2 border-slate-950 bg-indigo-400 sm:-left-[2.44rem]"
+              className="absolute left-[-1.94rem] top-1/2 h-3.5 w-3.5 -translate-y-1/2 rounded-full border-2 border-slate-950 bg-indigo-400 sm:left-[-2.44rem]"
             />
             <article className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
               <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
