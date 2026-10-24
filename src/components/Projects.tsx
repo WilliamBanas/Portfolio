@@ -2,39 +2,21 @@ import { projects } from '../data/projects'
 
 export default function Projects() {
   return (
-    <section
-      id="projects"
-      aria-labelledby="projects-title"
-      className="scroll-mt-24"
-    >
+    <section id="projects" aria-labelledby="projects-title">
       <h2 id="projects-title" className="text-2xl font-semibold tracking-tight sm:text-3xl">
         Projets
       </h2>
-      <ul className="mt-10 grid gap-6 sm:grid-cols-2">
+      <ul className="mt-8 divide-y divide-zinc-800">
         {projects.map((project) => (
-          <li
-            key={project.id}
-            className="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-6"
-          >
+          <li key={project.id} className="py-6 first:pt-0 last:pb-0">
             <h3 className="text-lg font-semibold">{project.title}</h3>
-            <p className="mt-2 flex-1 text-pretty leading-relaxed text-slate-300">
-              {project.description}
-            </p>
-            <ul className="mt-4 flex flex-wrap gap-2">
-              {project.tags.map((tag) => (
-                <li
-                  key={tag}
-                  className="rounded-full bg-slate-800 px-2.5 py-1 text-xs font-medium text-slate-300"
-                >
-                  {tag}
-                </li>
-              ))}
-            </ul>
-            <div className="mt-6 flex flex-wrap gap-4 text-sm font-medium">
+            <p className="mt-2 text-pretty text-zinc-200">{project.description}</p>
+            <p className="mt-2 text-sm text-zinc-400">{project.tags.join(', ')}</p>
+            <div className="mt-3 flex flex-wrap gap-x-6 gap-y-2 text-sm">
               {project.repo && (
                 <a
                   href={project.repo}
-                  className="text-indigo-400 transition-colors hover:text-indigo-300"
+                  className="underline underline-offset-4 hover:text-zinc-300"
                 >
                   Code source
                 </a>
@@ -42,7 +24,7 @@ export default function Projects() {
               {project.demo && (
                 <a
                   href={project.demo}
-                  className="text-indigo-400 transition-colors hover:text-indigo-300"
+                  className="underline underline-offset-4 hover:text-zinc-300"
                 >
                   Démo
                 </a>

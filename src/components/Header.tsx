@@ -1,30 +1,27 @@
 import { profile } from '../data/profile'
+import StarMark from './StarMark'
 
 const links = [
-  { label: 'Accueil', href: '#hero' },
   { label: 'À propos', href: '#about' },
   { label: 'Expériences', href: '#experience' },
   { label: 'Projets', href: '#projects' },
-  { label: 'Contact', href: '#contact' },
 ]
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-20 border-b border-slate-800/80 bg-slate-950/80 backdrop-blur">
-      <div className="mx-auto flex w-full max-w-5xl flex-wrap items-center justify-between gap-3 px-6 py-4">
-        <a
-          href="#top"
-          className="text-lg font-semibold tracking-tight transition-colors hover:text-indigo-300"
-        >
+    <header>
+      <div className="mx-auto flex w-full max-w-3xl flex-wrap items-baseline justify-between gap-3 px-6 py-4">
+        <a href="#top" className="flex items-center gap-2 text-lg font-semibold">
+          <StarMark className="h-5 w-5" />
           {profile.name}
         </a>
         <nav aria-label="Navigation principale">
-          <ul className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm font-medium text-slate-400 sm:gap-x-6">
+          <ul className="flex flex-wrap items-baseline gap-x-5 gap-y-1 text-sm text-zinc-300">
             {links.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="transition-colors hover:text-indigo-300"
+                  className="hover:text-white hover:underline hover:underline-offset-4"
                 >
                   {link.label}
                 </a>

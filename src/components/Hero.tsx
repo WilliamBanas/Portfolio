@@ -1,38 +1,22 @@
 import { profile } from '../data/profile'
+import StarMark from './StarMark'
 
 export default function Hero() {
   return (
     <section
       id="hero"
       aria-labelledby="hero-title"
-      className="scroll-mt-24"
+      className="relative isolate flex min-h-[55vh] flex-col justify-center"
     >
-      <p className="text-sm font-medium uppercase tracking-widest text-indigo-400">
-        {profile.role}
-      </p>
+      <StarMark className="pointer-events-none absolute -right-32 top-1/2 -z-10 h-[26rem] w-[26rem] -translate-y-1/2 select-none text-[#121214] sm:-right-16 sm:h-[34rem] sm:w-[34rem]" />
+      <p className="text-sm text-zinc-400">{profile.name}</p>
       <h1
         id="hero-title"
-        className="mt-4 text-balance text-4xl font-semibold tracking-tight sm:text-6xl"
+        className="mt-4 text-balance text-5xl font-semibold tracking-tight sm:text-7xl lg:text-8xl"
       >
-        {profile.name}
+        Développeur
+        <span className="block">Fullstack</span>
       </h1>
-      <p className="mt-6 max-w-2xl text-pretty text-lg text-slate-300 sm:text-xl">
-        {profile.tagline}
-      </p>
-      <div className="mt-8 flex flex-wrap items-center gap-3">
-        <a
-          href="#projects"
-          className="rounded-full bg-indigo-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-400"
-        >
-          Voir mes projets
-        </a>
-        <a
-          href="#contact"
-          className="rounded-full border border-slate-700 px-5 py-2.5 text-sm font-semibold text-slate-200 transition-colors hover:border-slate-500 hover:text-white"
-        >
-          Me contacter
-        </a>
-      </div>
     </section>
   )
 }
