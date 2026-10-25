@@ -3,12 +3,12 @@ import { profile } from '../data/profile'
 export default function About() {
   return (
     <section id="about" aria-labelledby="about-title">
-      <h2 id="about-title" className="text-2xl font-semibold tracking-tight sm:text-3xl">
+      <h2 id="about-title" className="text-sm font-mono font-normal tracking-tight text-zinc-400">
         À propos
       </h2>
       <div className="mt-6 space-y-4 text-pretty text-zinc-200">
         {profile.bio.map((paragraph) => (
-          <p key={paragraph}>{paragraph}</p>
+          <p key={paragraph} dangerouslySetInnerHTML={{ __html: paragraph }}></p>
         ))}
       </div>
       <dl className="mt-8 space-y-1 text-sm">
@@ -19,7 +19,6 @@ export default function About() {
           </div>
         ))}
       </dl>
-      <p className="mt-8 text-zinc-200">{profile.skills.join(', ')}</p>
     </section>
   )
 }

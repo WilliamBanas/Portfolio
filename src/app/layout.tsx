@@ -1,19 +1,26 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import './globals.css'
+import { JetBrains_Mono } from 'next/font/google';
 
 export const metadata: Metadata = {
-  title: 'Alex Martin — Développeur Full-Stack',
+  title: 'williamb.dev - développeur fullstack',
   description:
-    "Portfolio d'Alex Martin, développeur full-stack : expériences, projets et contact.",
+    "Portfolio de William Banas, développeur full-stack : expériences, projets et contact.",
   icons: {
-    icon: '/favicon.svg',
+    icon: '/favicon.svg?v=4',
   },
 }
 
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-jetbrains-mono',
+});
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="fr">
+    <html lang="fr" className={jetbrainsMono.variable}>
       <body>{children}</body>
     </html>
   )

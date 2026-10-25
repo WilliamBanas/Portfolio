@@ -1,51 +1,43 @@
 export type SocialLink = {
-  label: string
-  href: string
-}
+	label: string;
+	href: string;
+};
 
 export type ProfileStat = {
-  label: string
-  value: string
-}
+	label: string;
+	value: string;
+};
 
 export const profile = {
-  name: 'Alex Martin',
-  role: 'Développeur Full-Stack',
-  tagline:
-    "Je conçois des applications web robustes et accessibles, du prototype à la mise en production.",
-  bio: [
-    "Développeur full-stack basé à Paris, je travaille principalement avec React, TypeScript et Node.js. J'aime transformer des besoins métier complexes en interfaces simples et en APIs maintenables.",
-    "Curieux et attaché à la qualité du code, je m'intéresse aussi bien à l'architecture qu'à l'expérience utilisateur. J'interviens sur l'ensemble du cycle de vie d'un produit, de la conception au suivi en production.",
-  ],
-  email: 'hello@example.com',
-  location: 'Paris, France',
-  socials: [
-    { label: 'GitHub', href: '#' },
-    { label: 'LinkedIn', href: '#' },
-  ],
-  skills: [
-    'React',
-    'TypeScript',
-    'Node.js',
-    'Tailwind CSS',
-    'PostgreSQL',
-    'Docker',
-    'Git',
-    'Accessibilité',
-  ],
-  stats: [
-    { label: "Années d'expérience", value: '7+' },
-    { label: 'Localisation', value: 'Paris, France' },
-    { label: 'Disponibilité', value: 'Ouvert aux missions' },
-  ],
+	name: "William Banas",
+	url: "williamb.dev",
+	role: "Développeur Full-Stack",
+	bio: [
+		"Développeur web basé à Paris, avec deux ans d'expérience en développement front-end et back-end, ainsi qu'en conception d'applications",
+		`J'ai eu l'opportunité de travailler pour
+    <a className='text-decoration-line' href="https://www.leonis-formation.fr/" target="_blank" rel="noopener noreferrer">Collecty form</a>,
+    <a href="https://yvelinespc.fr/" target="_blank" rel="noopener noreferrer">YvelinesPC</a>
+    ainsi que pour le ministère de l'Intérieur au sein de la <a href="https://www.police-nationale.interieur.gouv.fr/nous-decouvrir/notre-organisation/organisation/direction-nationale-de-police-judiciaire-dnpj" target="_blank" rel="noopener noreferrer">Direction nationale de la police judiciaire</a>.`,
+		"Pendant mon temps libre, j'aime passer du temps avec mes amis, parcourir Skyrim et écouter de la dance music.",
+	],
+	email: "hello@example.com",
+	location: "Paris, France",
+	socials: [
+		{ label: "GitHub", href: "#" },
+		{ label: "LinkedIn", href: "#" },
+	],
+	stats: [
+		{ label: "Années d'expérience", value: "2+" },
+		{ label: "Localisation", value: "Paris, France" },
+		{ label: "Disponibilité", value: "Ouvert aux missions" },
+	],
 } satisfies {
-  name: string
-  role: string
-  tagline: string
-  bio: string[]
-  email: string
-  location: string
-  socials: SocialLink[]
-  skills: string[]
-  stats: ProfileStat[]
-}
+	name: string;
+	role: string;
+	url: string;
+	bio: string[];
+	email: string;
+	location: string;
+	socials: SocialLink[];
+	stats: ProfileStat[];
+};

@@ -5,7 +5,7 @@ export default function Experience() {
     <section id="experience" aria-labelledby="experience-title">
       <h2
         id="experience-title"
-        className="text-2xl font-semibold tracking-tight sm:text-3xl"
+        className="text-sm font-mono font-normal tracking-tight text-zinc-400"
       >
         Expériences
       </h2>
@@ -17,11 +17,11 @@ export default function Experience() {
                 {experience.role}
                 <span className="font-normal text-zinc-300"> · {experience.company}</span>
               </h3>
-              <p className="text-sm text-zinc-400">{experience.period}</p>
+              <p className="font-mono text-sm text-zinc-400">{experience.period}</p>
             </div>
             <p className="text-sm text-zinc-400">{experience.location}</p>
             <p className="mt-3 text-pretty text-zinc-200">{experience.description}</p>
-            <p className="mt-3 text-sm text-zinc-400">{experience.tags.join(', ')}</p>
+            <p className="font-mono mt-3 text-sm text-zinc-400">{experience.tags.join(', ')}</p>
           </li>
         ))}
       </ol>

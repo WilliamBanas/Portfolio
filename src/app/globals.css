@@ -1,5 +1,10 @@
 @import 'tailwindcss';
 
+@theme {
+  --font-georgia: Georgia, serif;
+  --font-mono: var(--font-jetbrains-mono)
+}
+
 html {
   scroll-behavior: smooth;
 }
