@@ -1,6 +1,6 @@
 # Portfolio
 
-Portfolio personnel d'Alex Martin, développé avec Next.js, React, TypeScript et Tailwind CSS.
+Portfolio personnel d'William Banas, développé avec Next.js, React, TypeScript et Tailwind CSS.
 
 ## Démarrage
 
