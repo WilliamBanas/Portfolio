@@ -17,7 +17,7 @@ export const experiences: Experience[] = [
     location: 'Ile de France, France',
     description:
       "Développement de plusieurs applications SaaS pour des clients du secteur culturel. Mise en place d'une architecture React/Node.js, de tests automatisés et d'une CI/CD sur mesure.",
-    tags: ['React', 'Node.js', 'PostgreSQL', 'Docker'],
+    tags: ['NextJs', 'TypeScript', 'CSS'],
   },
   {
     id: 'exp-dnpj',
@@ -27,7 +27,7 @@ export const experiences: Experience[] = [
     location: 'Nanterre, France',
     description:
       "Refonte d'interfaces e-commerce et création d'un design system partagé. Amélioration des performances et de l'accessibilité sur l'ensemble des parcours d'achat.",
-    tags: ['TypeScript', 'React', 'Design System', 'Accessibilité'],
+    tags: ['TypeScript', 'React', 'NestJs', 'Node.js', 'PostgreSQL','API REST', 'Conception'],
   },
   {
     id: 'exp-collecty\'form',
@@ -37,6 +37,6 @@ export const experiences: Experience[] = [
     location: 'Ile de France, France',
     description:
       "Accompagnement de petites structures dans la création de leur site vitrine et de leurs outils internes. De la découverte du besoin jusqu'à la mise en ligne et la maintenance.",
-    tags: ['Next.js', 'Tailwind CSS', 'API REST'],
+    tags: ['React','Node.js', 'ExpressJs', 'CSS', 'API REST'],
   },
 ]

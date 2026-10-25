@@ -9,38 +9,38 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: 'project-taskflow',
-    title: 'TaskFlow',
+    id: 'project-deathroll',
+    title: 'Deathroll',
     description:
-      "Application collaborative de gestion de tâches avec tableaux kanban, attribution et notifications en temps réel.",
-    tags: ['React', 'TypeScript', 'Node.js', 'Socket.io'],
-    repo: '#',
-    demo: '#',
+      "Mini-jeu multijoueur en ligne.",
+    tags: ['NextJs', 'TypeScript', 'Node.js', 'WebSocket'],
   },
   {
-    id: 'project-catalog',
-    title: 'Catalog',
+    id: 'project-makistador',
+    title: 'Makistador',
     description:
-      "Plateforme de gestion de catalogue produits avec recherche avancée, filtres et import CSV.",
-    tags: ['Next.js', 'PostgreSQL', 'Prisma'],
-    repo: '#',
-    demo: '#',
+      "Application permettant de proposer la carte d’un restaurant fictif via un site web.",
+    tags: ['React','TypeScript', 'NestJS', 'Node.js', 'Prisma', 'TalwindCSS'],
   },
   {
-    id: 'project-design-system',
-    title: 'Design System',
+    id: 'project-ksp',
+    title: 'Kepler Space Lab',
     description:
-      "Bibliothèque de composants React documentée et testée, pensée pour être partagée entre plusieurs projets.",
-    tags: ['React', 'Tailwind CSS', 'Storybook'],
-    repo: '#',
+     'Application de visualisation du système solaire en 3d.',
+    tags: ['TypeScript', 'NextJs', 'Node.js', 'ThreeJS', 'PostgreSQL'],
+  },
+  {
+    id: 'project-my-spotify',
+    title: 'My Spotify',
+    description:
+      "Application permettant de consulter ses artistes et musiques favoris ainsi que ses playlists.",
+    tags: ['JavaScript', 'CSS', 'Spotify API'],
   },
   {
     id: 'project-portfolio',
     title: 'Portfolio',
     description:
-      "Ce site personnel, construit avec React, Vite et Tailwind CSS pour présenter mon parcours et mes projets.",
-    tags: ['React', 'Vite', 'Tailwind CSS'],
-    repo: '#',
-    demo: '#',
+      "Ce site personnel, construit avec Nextjs et TailwindCSS pour présenter mon parcours et mes projets.",
+    tags: ['NextJs', 'TailwindCSS'],
   },
 ]

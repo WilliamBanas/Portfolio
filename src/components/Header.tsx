@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from 'react'
 import { profile } from '../data/profile'
 import StarMark from './StarMark'
 
@@ -8,11 +11,14 @@ const links = [
 ]
 
 export default function Header() {
+
+  const [spinningLogo, setSpinningLogo] = useState(false)
+
   return (
     <header className="font-mono">
       <div className="mx-auto flex w-full max-w-3xl flex-wrap items-baseline justify-between gap-3 px-6 py-4">
-        <a href="#top" className="flex items-center gap-2 text-sm">
-          <StarMark className="h-5 w-5" />
+        <a href="#top" className='flex items-center gap-2 text-sm' onMouseEnter={() => setSpinningLogo(true)} onFocus={() => setSpinningLogo(true)}>
+          <StarMark className={`h-5 w-5 ${spinningLogo ? 'motion-safe:animate-spin-logo' : ''}`} onAnimationEnd={() => setSpinningLogo(false)} />
           {profile.url}
         </a>
         <nav aria-label="Navigation principale">
