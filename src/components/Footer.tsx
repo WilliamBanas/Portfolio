@@ -10,7 +10,7 @@ export default function Footer() {
             <StarMark className="h-8 w-8 text-white" />
             <a
               href={`mailto:${profile.email}`}
-              className="underline underline-offset-4 hover:text-zinc-300"
+              className="text-sm underline underline-offset-4 hover:text-zinc-300"
             >
               {profile.email}
             </a>

@@ -18,7 +18,7 @@ export const profile = {
     <a href="https://www.leonis-formation.fr/" target="_blank" rel="noopener noreferrer">Collecty form</a>,
     <a href="https://yvelinespc.fr/" target="_blank" rel="noopener noreferrer">YvelinesPC</a>
     ainsi que pour le ministère de l'Intérieur au sein de la <a href="https://www.police-nationale.interieur.gouv.fr/nous-decouvrir/notre-organisation/organisation/direction-nationale-de-police-judiciaire-dnpj" target="_blank" rel="noopener noreferrer">Direction nationale de la police judiciaire</a>.`,
-		"Pendant mon temps libre, j'aime passer du temps avec mes amis, parcourir Skyrim et écouter de la dance music.",
+		"Pendant mon temps libre, j'aime passer du temps avec mes amis, parcourir Skyrim, mixer et écouter de la dance music.",
 	],
 	email: "banaswilliam@gmail.com",
 	location: "Paris, France",
