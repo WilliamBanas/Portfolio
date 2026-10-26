@@ -19,7 +19,7 @@ export default function Experience() {
               </h3>
               <p className="font-mono text-sm text-zinc-400">{experience.period}</p>
             </div>
-            <p className="text-sm text-zinc-400">{experience.location}</p>
+            <p className="font-mono text-sm text-zinc-400">{experience.location}</p>
             <p className="mt-3 text-pretty text-zinc-200">{experience.description}</p>
             <p className="font-mono mt-3 text-sm text-zinc-400">{experience.tags.join(', ')}</p>
           </li>

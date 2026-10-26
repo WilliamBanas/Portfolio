@@ -16,7 +16,7 @@ export const experiences: Experience[] = [
     period: '04/2026 - 05/2026',
     location: 'Ile de France, France',
     description:
-      "Développement de plusieurs applications SaaS pour des clients du secteur culturel. Mise en place d'une architecture React/Node.js, de tests automatisés et d'une CI/CD sur mesure.",
+      "Conception et développement d’un site vitrine mobile-first en React, du cadrage à la mise en ligne, avec des échanges directs avec le client pour valider chaque étape.",
     tags: ['NextJs', 'TypeScript', 'CSS'],
   },
   {
@@ -26,7 +26,7 @@ export const experiences: Experience[] = [
     period: '10/2023 - 02/2025',
     location: 'Nanterre, France',
     description:
-      "Refonte d'interfaces e-commerce et création d'un design system partagé. Amélioration des performances et de l'accessibilité sur l'ensemble des parcours d'achat.",
+      "Refonte complète d’une application métier critique : cadrage des besoins avec les utilisateurs finaux, conception de l’architecture et de l’UX/UI, développement fullstack et rédaction de la documentation technique pour faciliter la reprise par les équipes.",
     tags: ['TypeScript', 'React', 'NestJs', 'Node.js', 'PostgreSQL','API REST', 'Conception'],
   },
   {
@@ -36,7 +36,7 @@ export const experiences: Experience[] = [
     period: '07/2023 - 09/2026',
     location: 'Ile de France, France',
     description:
-      "Accompagnement de petites structures dans la création de leur site vitrine et de leurs outils internes. De la découverte du besoin jusqu'à la mise en ligne et la maintenance.",
+      "Conception et développement d’une application interne en équipe produit agile : livraison de fonctionnalités frontend et backend conformes aux spécifications en 2 mois, avec répartition des tâches et mise en place des rituels agiles.",
     tags: ['React','Node.js', 'ExpressJs', 'CSS', 'API REST'],
   },
 ]
