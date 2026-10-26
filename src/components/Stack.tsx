@@ -10,12 +10,12 @@ export default function Stack() {
         {stack.map((group) => (
           <div key={group.label} className="grid grid-cols-[7rem_1fr] items-center gap-x-6 py-4 first:pt-0 last:pb-0">
             <dt className="text-sm text-zinc-400">{group.label}</dt>
-            <dd className="text-zinc-200">
+            <dd className="text-zinc-300">
               <ul className="flex flex-wrap items-center gap-x-2">
                 {group.items.map((item) => (
                   <li
                     key={item}
-                    className="flex items-center gap-x-2 before:content-['·'] before:text-zinc-600 first:before:hidden"
+                    className="flex items-center gap-x-2 before:h-[5px] before:w-[5px] before:shrink-0 before:rounded-full before:bg-zinc-600 before:content-[''] first:before:hidden"
                   >
                     {item}
                   </li>

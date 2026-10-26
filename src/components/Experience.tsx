@@ -13,14 +13,15 @@ export default function Experience() {
         {experiences.map((experience) => (
           <li key={experience.id} className="py-6 first:pt-0 last:pb-0">
             <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-              <h3 className="text-lg font-semibold">
-                {experience.company}
-                <span className="font-normal text-zinc-300"> · {experience.role}</span>
-              </h3>
+              <h3 className="text-lg font-semibold">{experience.company}</h3>
               <p className="font-mono text-sm text-zinc-400">{experience.period}</p>
             </div>
-            <p className="font-mono text-sm text-zinc-400">{experience.location}</p>
-            <p className="mt-3 text-pretty text-zinc-200">{experience.description}</p>
+            <p className="flex flex-wrap items-center gap-x-2 font-mono text-sm italic text-zinc-400">
+              {experience.role}
+              <span aria-hidden="true" className="h-[5px] w-[5px] shrink-0 rounded-full bg-zinc-600" />
+              {experience.location}
+            </p>
+            <p className="mt-3 text-pretty text-zinc-300">{experience.description}</p>
             <p className="font-mono mt-3 text-sm text-zinc-400">{experience.tags.join(', ')}</p>
           </li>
         ))}

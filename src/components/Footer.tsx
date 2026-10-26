@@ -3,14 +3,14 @@ import StarMark from './StarMark'
 
 export default function Footer() {
   return (
-    <footer id="contact" className="font-mono">
+    <footer id="contact" className="mt-12 font-mono">
       <div className="mx-auto w-full max-w-3xl px-6 py-8">
         <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div className="flex flex-col gap-3">
             <StarMark className="h-8 w-8 text-white" />
             <a
               href={`mailto:${profile.email}`}
-              className="text-sm underline underline-offset-4 hover:text-zinc-300"
+              className="text-sm text-zinc-400 underline underline-offset-4 hover:text-white"
             >
               {profile.email}
             </a>
