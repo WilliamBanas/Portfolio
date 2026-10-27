@@ -18,7 +18,7 @@ export default function Experience() {
             </div>
             <p className="flex flex-wrap items-center gap-x-2 font-mono text-sm italic text-zinc-400">
               {experience.role}
-              <span aria-hidden="true" className="h-[5px] w-[5px] shrink-0 rounded-full bg-zinc-600" />
+              <span aria-hidden="true" className="h-1.25 w-1.25 shrink-0 rounded-full bg-zinc-600" />
               {experience.location}
             </p>
             <p className="mt-3 text-pretty text-zinc-300">{experience.description}</p>
